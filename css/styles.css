@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, main, footer, img, h1, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -11,6 +11,14 @@ img {
 	display: block;
 }
 
+/* Style rule for mobile viewport */
+
+
+/* Hide tab-desk class */
+.tab-desk {
+	display: none;
+}
+
 /* Style rules for header content */
 header {
 	text-align: center;
@@ -18,23 +26,30 @@ header {
 	color: #1c4f33;
 }
 
+header h1 {
+	font-family: 'Patua One', cursive;
+}
+
 header h3 {
+	font-family: 'Quattrocento', serif;
 	font-style: italic;
 }
 
 /* Style rules for navigation area */
 nav{
+	font-family: 'Quattrocento', serif;
+	font-weight: bold;
 	background-color: #1c4f33;
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 0;
 	text-align: center;
 }
 
 nav li {
-	display: inline-block;
+	display: block;
+	border-top: 1px solid #bfe3cd;
 	font-size: 2em;
 }
 
@@ -48,13 +63,14 @@ nav li a {
 
 /* Style rules for main content */
 main {
+	font-family: 'Quattrocento', serif;
 	padding: 2%;
 	background-color: #bfe3cd;
 	overflow: auto;
-	font-family: Verdana, Arial, sans-serif;
 }
 
 h2 {
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -84,8 +100,34 @@ main dd {
 	padding: 1% 2%;
 }
 
+.round {
+	border-radius: 10px
+}
+
 #contact {
 	text-align: center;
+}
+
+.tel-link {
+	background-color: #1c4f33;
+	padding: 2%;
+	margin: auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+#contact .email-link {
+	color: #4645a8;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 #about {
@@ -99,8 +141,14 @@ main dd {
 	padding-right: 50px;
 }
 
+#faq {
+	text-align: center;
+}
+
 .map {
 	border: 5px solid #b0e8c9;
+	width: 95%;
+	height: 50%;
 }
 
 /* Style rules for footer content */
