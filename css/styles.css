@@ -193,6 +193,31 @@ footer a {
 		padding-left: 0.5em;
 		padding-right: 0.5em
 	}
+	
+	
+.dropbtn {
+  display: inline block;
+  postiion: relative;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: green;
+  color: white;
+}
+
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+
 	/* Tablet Viewport: style rule for map */
 	.map {
 		width: 500px;
