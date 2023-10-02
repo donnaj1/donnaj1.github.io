@@ -205,7 +205,7 @@ footer a {
 		top border: none;
 		display: inline-block;
 		font-size: 1.5em;
-		border-right: 1px solid #36e9fc;
+		border-right: 1px solid;
 	}
 	nav li:last-child {
 		border-right: none; 
