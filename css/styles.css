@@ -187,8 +187,8 @@ main dd {
 .column {
 	float: left;
 	width: 50%;
-	height: 100%
 	padding: 10px;
+	border: 10px;
 }	
 
 /* Style rules for footer content */
