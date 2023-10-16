@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, ul {
+body, header, nav, main, footer, img, h1, ul, figure, figcaption {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -89,6 +89,25 @@ nav li a {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.frame {
+	position: relative;
+	max-width: 450px;
+	margin: 2% auto;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba (0, 0, 0, 0.5);
+	color: #fff;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
 
 /* Style rules for main content */
 main {
