@@ -74,11 +74,6 @@ nav {
 	background-color: #1c4f33;
 }
 
-nav ul {
-	list-style-type: none;
-	text-align: center;
-}
-
 nav li {
 	display: block;
 	border-top: 1px solid #bfe3cd;
@@ -283,6 +278,57 @@ aside {
 	grid-column: 1 / span 2;
 }
 
+/* CSS for mobile*/ 		
+@media only screen and (max-width: 600px), print {	
+	.tab-desk nav {
+		display: none;
+	}
+	
+	.tab-desk nav li {
+		display: none;
+	}
+	.mobile-nav a {
+		color: #fff;
+		text-align: center;
+		font-size: 2em;
+		text-decoration: none;
+		padding: 3%;
+		display: block;
+	}
+
+	.mobile-nav a.menu-icon {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.menu-icon div {
+		height: 50px;
+		width: 50px;
+		background-color: #373684;
+	}
+
+	.mobile-nav li {
+		color: #fff;
+		text-align: center;
+		font-size: 1.5em;
+		text-decoration: none;
+		padding: 3%;
+		display: block;
+	}	
+	
+	#menu-links {
+		display: none;
+	}
+	
+	h1 {
+		font-size: 1.5em;
+		padding: 4%;
+		margin-right: 15%;
+	}
+}
+
 /* Media query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
 
@@ -293,11 +339,27 @@ aside {
 	.mobile {
 		display: none;
 	}
+	.mobile-nav {
+		display: none;
+	}
 
 	/* Tablet Viewport: Style rule for header content */
+	h1 {
+		margin: 0;
+		padding:0;
+		font-size: 2em;
+	}
+	
+	h2 {
+		margin: 0;
+		padding:0;
+		font-size: 1em;
+	}
+	
 	span.tab-desk {
 	display: inline;
 	}
+	
 	/* Tablet viewport: style rules for nav area */
 	nav li {
 		top border: none;
@@ -313,6 +375,11 @@ aside {
 		padding-bottom: 0.25em;
 		padding-left: 0.5em;
 		padding-right: 0.5em
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: center;
 	}
 
 	/* Tablet Viewport: style rule for map */
@@ -376,6 +443,9 @@ aside {
 		padding-right: 1.5em;
 	}
 	
+	nav li a:hover {
+		transform: scale(1.2);
+	}
 	/* Desktop Viewport Style rules for main content */
 	#info ul {
 		margin-left: 5%;
