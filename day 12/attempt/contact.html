@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- This website was created by Donna Jang -->
+<html lang="en">
+<head>
+	<title>Donna's Website: Contact Us</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<body>
+<!-- Mobile nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="faqs.html">FAQs</a>
+			<a href="contact.html">Contact Us</a></li>
+  			<li class="dropdown"><a href="#">Class</a>
+  				<div class="dropdown-content">
+   					<a href="day 1/index.html">Day 1</a>
+    				<a href="day 2/index.html">Day 2</a>
+    				<a href="day 3/index.html">Day 3</a>
+    				<a href="day 4/index.html">Day 4</a>
+    				<a href="day 5/index.html">Day 5</a>
+    				<a href="day 6/index.html">Day 6</a>
+  				</div>
+  		</div>
+  		<a class="menu-icon" onclick="hamburger()">
+  			<div>&#9776;</div>
+  		</a>
+  	</nav>
+	<!-- Use the header area for the website name or logo -->
+	<header>
+		<h1 style="color:#1c4f33;"><span class="tab-desk">&#9825;</span> Donna's Website <span class="tab-desk">&#9825;</span></h1>
+		<h3 style="color: #74ab9d;">"Where dreams come true..."</h3>
+	</header>
+	
+	<!-- Use the nav area to add hyperlinks to other pages within the website -->
+	<nav class="tab-desk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="faqs.html">FAQs</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li class="dropdown"><a href="#">Class</a>				<div class="dropdown-content">
+   					<a href="day 1/index.html">Day 1</a>
+    				<a href="day 2/index.html">Day 2</a>
+    				<a href="day 3/index.html">Day 3</a>
+    				<a href="day 4/index.html">Day 4</a>
+    				<a href="day 5/index.html">Day 5</a>
+    				<a href="day 6/index.html">Day 6</a>
+  				</div>
+  			</div>
+  			</li>
+		</ul>
+	
+	</nav>
+	
+	<!-- Use the main area to add the main content of the webpage -->
+	<main>
+	
+	<div id="contact">
+		<h2>You can reach us at:</h2>
+		
+		<p class="tel-link mobile"><a href="123456789">(123) 456-789</a></p>
+		<p class="tab-desk">(814) 555-9228</p>
+		<p class="email-link"><a href="mailto:hello@email.com">hello@email.com</a></p>
+		
+		<p>123 Hypothetical Rd, Atlanta, GA 30033</p>
+		
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212271.66477902155!2d-84.73196365862474!3d33.76726090163541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA!5e0!3m2!1sen!2sus!4v1693702019558!5m2!1sen!2sus" "allowfullscreen=" "loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" class="map"></iframe>
+		
+	</div>
+	<div id="form">
+		<h2>Complete the form below and we will contact you!</h2>
+		<form class="form-grid"><!-- Start form-->
+			<fieldset>
+				<legend>customer info</legend>
+				<label for="fName">First Name:<label>
+				<input type="text" name="fName" id="fName">
+				<label for="lName">Last Name:<label>
+				<input type="text" name="lName" id="lName">
+				<label for="email">Email:<label>
+				<input type="email" name="email" id="email">
+				<label for="phone">Phone:<label>
+				<input type="tel" name="phone" id="phone">
+			</fieldset>
+			<fieldset>
+				<legend>interest</legend>
+				<p>i'm interested in:</p>
+				<label for="guitarles"><input type="checkbox" name="interest" id="guitarles" value="Guitar Lessons">Something</label>
+				<label for="piano"><input type="checkbox" name="interest" id="pianoles" value="Piano Lessons">Something else</label>
+			</fieldset>
+			<submit>
+				<label for="submit"><input type="submit" id="submit" value="Submit" class="btn"></label>
+			</submit>
+				
+		</form>
+	</div>
+	</main>
+	
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>
+		<p>&copy; Copyright 2023. All Rights Reserved.</p>
+	</footer>
+	
+</body>
+</html>
