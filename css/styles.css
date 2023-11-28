@@ -27,6 +27,27 @@ aside {
     grid-column: 1 / span 4;
 }
 
+.row {
+  position: relative;
+  display: flex;
+  height: 50%;width: 100%;margin: 0;
+}
+
+.column-text {
+	width: 50%;
+	object-fit: contain;
+	float: right;
+	text-shadow: none;
+	grid-column: 0;
+}
+
+.column-image {
+	width: 50%;
+	height: 100%;
+	object-fit: contain;
+	float: left;
+}
+
 figure {
 	position: relative;
 	max-width: 275px;
@@ -36,14 +57,13 @@ figure {
 figcaption {
 	position: absolute;
 	bottom: 0;
-	background: rgba(55, 54, 132, 0.7);
-	color: #fff;
+	background: #f1786a;
+	color: white;
 	width: 100%;
 	padding: 5% 0;
 	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1em;
-	font-weight: bold;
+	font-family: 'Merriweather', serif;
+	font-size: 1.5em;
 }
 
 /* Hide tab-desk class */
@@ -53,39 +73,55 @@ figcaption {
 
 /* Style rules for header content */
 header {
-	text-align: center;
-	font-size: 3em;
-	color: #1c4f33;
+	color: white;
+}
+
+header{
+    width: 100%; 
+    background-image: url("../images/redbird.jpg"); 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: cover;
 }
 
 header h1 {
 	font-family: 'Patua One', cursive;
+	font-size: 5em;
+	text-align: center;
+	padding-top: 150px
 }
 
 header h3 {
 	font-family: 'Quattrocento', serif;
 	font-style: italic;
+	font-size: 2em;
+	text-align: center;
+	padding-bottom: 150px;
 }
 
 /* Style rules for navigation area */
 nav {
 	font-family: 'Quattrocento', serif;
 	font-weight: bold;
-	background-color: #1c4f33;
+	float: right;
 }
 
 nav li {
 	display: block;
-	border-top: 1px solid #bfe3cd;
-	font-size: 2em;
+	color: black;
 }
 
 nav li a {
-	display: block;
+	display: inline;
 	color: #fff;
-	text-align: center;
-	padding: 0.5em 1em;
+	text-align: left;
 	text-decoration: none;
+}
+
+.logo {
+	font-family: 'Bebas Neue', sans-serif;
+	text-align: left;
+	font-size: 1.5em;
+	padding-left: 20px;
 }
 
 /* Dropdown */
@@ -130,7 +166,7 @@ nav li a {
 	width: 100%;
 	padding: 20px;
 	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
+	font-family: 'Quattrocento', serif;
 	font-size: 1.5em;
 	font-weight: bold;
 }
@@ -139,7 +175,7 @@ nav li a {
 main {
 	font-family: 'Quattrocento', serif;
 	padding: 2%;
-	background-color: #bfe3cd;
+	background-color: #FAF9F6;
 	overflow: auto;
 }
 
@@ -229,13 +265,6 @@ main dd {
 	box-sizing: border-box;
 }
 
-.column {
-	float: left;
-	width: 50%;
-	padding: 10px;
-	border: 10px;
-}	
-
 /* style rules for form elements */
 fieldset, input {
 	margin-bottom: 2;
@@ -284,17 +313,23 @@ aside {
 		display: none;
 	}
 	
+	header {
+		position: relative;
+	}
+	
 	.tab-desk nav li {
 		display: none;
 	}
+	
 	.mobile-nav a {
 		color: #fff;
 		text-align: center;
-		font-size: 2em;
+		font-size: 4em;
 		text-decoration: none;
 		padding: 3%;
 		display: block;
-	}
+		background-color: #a3a3a3;
+		}
 
 	.mobile-nav a.menu-icon {
 		display: block;
@@ -306,7 +341,7 @@ aside {
 	.menu-icon div {
 		height: 50px;
 		width: 50px;
-		background-color: #373684;
+		background-color: #a3a3a3;
 	}
 
 	.mobile-nav li {
@@ -316,6 +351,7 @@ aside {
 		text-decoration: none;
 		padding: 3%;
 		display: block;
+		background-color: #a3a3a3;
 	}	
 	
 	#menu-links {
@@ -327,6 +363,34 @@ aside {
 		padding: 4%;
 		margin-right: 15%;
 	}
+	
+	.dropdown {
+	position: relative;
+	display: inline-block;
+	}
+
+	.dropdown-content {
+ 	 display: none;
+ 	 position: absolute;
+ 	 background-color: #f1f1f1;
+ 	 min-width: 160px;
+ 	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 	 z-index: 1;
+	}
+
+	.dropdown-content a {
+ 	 color: black;
+ 	 padding: 12px 16px;
+ 	 text-decoration: none;
+ 	 display: block;
+	}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 }
 
 /* Media query for Tablet Viewport */
@@ -399,14 +463,14 @@ aside {
     @-webkit-keyframes text animation {
     	0% { font-size: 1em; }
     	50% { font-size: 2em; }
-    	100% { font-size: 1.35em; }
+    	100% { font-size: 1.5em; }
     }
     
     
     @keyframes text-animation {
     	0% { font-size: 1em; }
     	50% { font-size: 2em; }
-    	100% { font-size: 1.24em; }
+    	100% { font-size: 1.5em; }
     }
     
     figcaption {
@@ -480,14 +544,14 @@ aside {
     @-webkit-keyframes text animation {
     	0% { font-size: 1em; }
     	50% { font-size: 2em; }
-    	100% { font-size: 1.35em; }
+    	100% { font-size: 1.5em; }
     }
     
     
     @keyframes text-animation {
     	0% { font-size: 1em; }
     	50% { font-size: 2em; }
-    	100% { font-size: 1.24em; }
+    	100% { font-size: 1.5em; }
     }
     
     figcaption {
